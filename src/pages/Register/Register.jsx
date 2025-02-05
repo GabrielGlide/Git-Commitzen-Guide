@@ -60,6 +60,9 @@ return (
                         onChange={onPasswordChange}
                         />
                     </div>
+                    <div className="form-control">
+                        <button type="button" onClick={handleSubmit}>Enviar</button>
+                    </div>
                 </form>
             </div>
         </>
