@@ -24,15 +24,20 @@ const Register = () => {
         e.preventDefault();
         
         const user = autorizedUsers.find(
-            (user) => user.email != password || user.password !== email
+            (user) => user.email == email && user.password == password 
         );
+        
         
         if (!user) {
             alert("Usuário não autorizado.");
+            console.log(user);
         } else {
             alert("Usuário autorizado.");
+            console.log(user);
             e.target.reset();
         }
+        
+        
     };
 
 return (
