@@ -62,10 +62,10 @@ O **Commitizen** facilita a padronização de commits seguindo as convenções. 
    1.2. Adicione **escopos** e descrições (opcional).  
 
 ### Lista de Tarefas:
-- [ ] Indente o código corretamente e remova as linhas de debug e comentários desnecessários.  
-- [ ] Adicione um botão de envio na tela de cadastro e vincule o form à função `handleSubmit()`.  
-- [ ] Verifique e corrija a autorização de usuarios autenticados após o submit do formulário.  
-- [ ] Crie um componente ao input do formulário, para reutilização em outras partes do projeto.  
+- [X] Indente o código corretamente e remova as linhas de debug e comentários desnecessários.  
+- [X] Adicione um botão de envio na tela de cadastro e vincule o form à função `handleSubmit()`.  
+- [X] Verifique e corrija a autorização de usuarios autenticados após o submit do formulário.  
+- [X] Crie um componente ao input do formulário, para reutilização em outras partes do projeto.  
 
 2. Atualize a documentação do projeto marcando as tarefas cumpridas `[X]`, seguindo os padrões descritos.  
 
