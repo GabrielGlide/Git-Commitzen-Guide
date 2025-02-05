@@ -1,5 +1,7 @@
+import Input from "../../components/InputComponent";
 import "./Register.css";
 import { useState } from "react";
+import InputComponent from "../../components/InputComponent";
 
 const Register = () => {
     const [email, setEmail] = useState("");
@@ -46,27 +48,21 @@ return (
                 <div className="header">
                     <h2>Entrar</h2>
                 </div>
-                <form id="form" className="form">
+                <form id="form" className="form" onSubmit={handleSubmit}>
                     <div className="form-control">
                         <label htmlFor="email">Email</label>
-                        <input
-                        type="text"
-                        id="email"
-                        placeholder="Digite seu email.."
-                        onChange={onEmailChange}
-                        />
+                    
+                        <InputComponent type="text" id="email" placeholder="Digite seu email..." onChange={onEmailChange}  />
                     </div>
                     <div className="form-control">
                         <label htmlFor="password">Senha</label>
-                        <input
-                        type="password"
-                        id="password"
-                        placeholder="Digite sua senha..."
-                        onChange={onPasswordChange}
-                        />
+                        
+
+                        <InputComponent type="password" id="password" placeholder="Digite sua senha..." onChange={onPasswordChange}  />
                     </div>
                     <div className="form-control">
-                        <button type="button" onClick={handleSubmit}>Enviar</button>
+                        <input type="submit" value="Enviar"/>
+
                     </div>
                 </form>
             </div>
